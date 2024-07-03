@@ -2,8 +2,6 @@
 
 import base64
 
-from itertools import zip_longest
-
 from .substitution import *
 from .transposition import *
 
@@ -45,7 +43,7 @@ def test_chapter_05():
     """All Your Phone Lines Belong to Me"""
     input_str = "jbi ujt veo eco ntk iwa lhc eeo anu uir trs hae oni rfn irt toh imi ets shs !eu"
     output = "itookacourseinthissubjectwheniranfromthejuvenileauthorities!"
-    assert columnar(input_str.split(), d_row=1, d_col=-1) == output
+    assert columnar_decipher(input_str.split(), d_row=1, d_col=-1) == output
     # ANSWER: The course was on criminal justice.
 
 
@@ -71,7 +69,7 @@ def test_chapter_08():
     """Lex Luthor"""
     input_str = "'siass nuhmil sowsra amnapi waagoc ifinti dscisf iiiesf ahgbao staetn itmlro"
     output = "isaidiwasn'tthisfamousmagicianwhilebeingasmartasstoprisonofficials"
-    assert columnar(input_str.split(), d_row=-1, d_col=1) == output
+    assert columnar_decipher(input_str.split(), d_row=-1, d_col=1) == output
     # ANSWER: The famous magician was David Copperfield.
 
 
@@ -163,7 +161,7 @@ def test_chapter_19():
     # Divide the input string into two rows.
     half = len(input_str) // 2
     rows = [input_str[:half], input_str[half:]]
-    assert columnar(rows, d_row=-1, d_col=1) == output
+    assert columnar_decipher(rows, d_row=-1, d_col=1) == output
     # ANSWER: His name was Joseph Ways.
 
 
