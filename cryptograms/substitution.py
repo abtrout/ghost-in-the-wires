@@ -96,7 +96,7 @@ def bifid_decrypt(key_prefix, ct):
 def vignere_decrypt(key, ct):
     """Vignere https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher."""
     res, i = "", 0
-    for c in ct:
+    for c in ct.lower():
         if c.isalpha():
             shift = ord(key[i % len(key)]) - ord('a')
             res += chr(ord('a') + ((ord(c) - shift - ord('a')) % 26))

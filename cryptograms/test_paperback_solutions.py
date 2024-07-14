@@ -1,4 +1,4 @@
-"""Solutions for cryptogram puzzles from Ghost In the Wires."""
+"""Solutions to the paperback edition, published in 2012."""
 
 import base64
 
@@ -315,7 +315,7 @@ def test_chapter_37():
     # ANSWER: The documentary was Freedom Downtime.
 
 
-# def test_chapter_38():
-#    """Aftermath: A Reversal of Fortune"""
-#    input_str = "001101 110010 001101 110010 001101 110010 001101 110010 111 00 011 00 10 110 0000 11 00 1001 110 0100 111 10 11 00 1101 1001 0100 10 100 11 01 101 0010 11 101 011 111 000 100 010 1001 001 1 101 01 010 1010 01 0 1110 10 0111 010 010"
-#    assert False, "TODO!"
+def test_chapter_38():
+    """Aftermath: A reversal of Fortune"""
+    input_str = "001101 110010 001101 110010 001101 110010 001101 110010 111 00 011 00 10 110 0000 11 00 1001 110 0100 111 10 11 00 1101 1001 0100 10 100 11 01 101 0010 11 101 011 111 000 100 010 1001 001 1 101 01 010 1010 01 0 1110 10 0111 010 010"
+    output = "???"  # TODO!
