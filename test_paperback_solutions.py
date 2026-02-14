@@ -288,5 +288,7 @@ class TestPaperbackSolutions(unittest.TestCase):
     def test_chapter_38(self):
         """Aftermath: A reversal of Fortune"""
         input_str = "001101 110010 001101 110010 001101 110010 001101 110010 111 00 011 00 10 110 0000 11 00 1001 110 0100 111 10 11 00 1101 1001 0100 10 100 11 01 101 0010 11 101 011 111 000 100 010 1001 001 1 101 01 010 1010 01 0 1110 10 0111 010 010"
-        output = "???"
-        self.fail("TODO")
+        output = "senatoriosephliebermansuggestedipcouldbecomean"
+        decoded = twisted_morse_decode(input_str.replace("1", "2").replace("0", "1").replace("2", "0"))
+        self.assertEqual(bifid_decrypt("downtime", decoded)[::-1], output)
+        # ANSWER: Senator Joseph Lieberman suggested he become a lawyer.

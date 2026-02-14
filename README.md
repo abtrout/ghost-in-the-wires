@@ -4,4 +4,11 @@ My solutions to the [cryptogram puzzles](https://en.wikipedia.org/wiki/Cryptogra
 
 There are two editions of the book with different puzzles: the original hardcover edition from 2011, and a paperback edition published in 2012. The paperback edition's puzzles were much more challenging and interesting.
 
-Run tests with `python3 -m unittest`.
+```bash
+$ python3 -m unittest
+............................................................................
+----------------------------------------------------------------------
+Ran 76 tests in 0.002s
+
+OK
+```
